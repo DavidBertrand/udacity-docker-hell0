@@ -22,12 +22,7 @@ jobs:
         paths:
           - ./venv
         key: v1-dependencies-
-      run:
+      - run:
         name: run lint
         make lint
-      
 
-workflows:
-  main:
-    jobs:
-      - build-and-test
